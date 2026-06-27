@@ -1,0 +1,29 @@
+[pid working] iter=0 acc=0
+[pid working] iter=0 acc=0
+[pid working] iter=200000000 acc=599999998
+[pid working] iter=200000000 acc=599999998
+[pid working] iter=400000000 acc=1199999998
+[pid working] iter=400000000 acc=1199999998
+[pid working] iter=600000000 acc=1800000000
+[pid working] iter=600000000 acc=1800000000
+[pid working] iter=800000000 acc=2399999997
+[pid working] iter=800000000 acc=2399999997
+[pid working] iter=1000000000 acc=3000000003
+[pid working] iter=1000000000 acc=3000000003
+[pid working] iter=1200000000 acc=3599999997
+[pid working] iter=1200000000 acc=3599999997
+[pid working] iter=1400000000 acc=4200000000
+[pid working] iter=1400000000 acc=4200000000
+[pid working] iter=1600000000 acc=4799999998
+[pid working] iter=1600000000 acc=4799999998
+[pid working] iter=1800000000 acc=5399999998
+[pid working] iter=1800000000 acc=5399999998
+[pid done] final acc=5999999995
+[pid done] final acc=5999999995
+scheduler: submitted './spin' as pid 647 (queued)
+scheduler: submitted './spin' as pid 648 (queued)
+
+--- SimpleScheduler final report (NCPU=1, TSLICE=200ms) ---
+JOB                  PID      COMPLETION   WAIT(xTSLICE)
+./spin               647      2           x 1           x
+./spin               648      2           x 1           x
