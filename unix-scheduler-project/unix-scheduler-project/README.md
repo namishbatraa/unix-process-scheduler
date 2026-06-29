@@ -33,19 +33,6 @@ submitted under `NCPU=1, TSLICE=200ms` show genuinely interleaved
 progress -- proof the round-robin preemption is real and not just job
 A finishing before job B starts. See `tests/scheduler_run.log`.
 
-### 3. SimpleSmartLoader (`loader/simple_loader.c`)
-A lazy ELF loader: maps zero segments upfront, jumps straight to the
-entry point, and handles the resulting SIGSEGV as a page fault --
-allocating and populating exactly one 4KB page at a time from the ELF
-file, page-by-page, until the program completes. Reports total page
-faults, page allocations, and internal fragmentation.
-
-> Note: this component requires a 32-bit (`-m32 -static`) toolchain to
-> build and run, which was not available in the sandbox used to
-> reconstruct this project. The implementation is complete and
-> logically traced through, but should be compiled and verified on a
-> standard Linux machine (with `gcc-multilib`) before relying on its
-> reported metrics.
 
 ## Build & Run
 
